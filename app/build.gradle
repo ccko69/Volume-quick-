@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.yourname.volumequick"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug { }
+        release {
+            minifyEnabled false
+        }
+    }
+
+    // Keep things simple for debugging/testing
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
